@@ -17,7 +17,9 @@ A component consists of joined rooms with open doors which you can  simply trave
 
 At the boundary of the component there are occasionally locked  parabolic doors. They open after the correct PIN has been entered and you traverse to the adjacent component. The PIN is the periodicity of the current component which you have to figure out beforehand, simply guess by trial-and-error or use an educated guess if you have discovered where in the Mandelbrot set you currently are located. Hidden in some of the rooms of a component are clues to 
 that periodicity, sometimes a simple note on the floor, sometimes hidden near an object, sometimes locked in a case where you have to 
-answer a question about fractals to open it, sometimes multiple choice. In the hyperbolic center of some components there is a transmitter 
+answer a question about fractals to open it, sometimes multiple choice. 
+
+In the hyperbolic center of some components there is a transmitter 
 that could - if active - teleport you to another component of the same periodicity, whether you already know it or not, but you do not 
 necessarily land in its hyperbolic center. 
 
