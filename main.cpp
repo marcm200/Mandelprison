@@ -1,4 +1,15 @@
-// MandelPrison - Free Benoit!
+/*
+
+	MandelPrison - Free Benoit!
+	
+	a fractal text adventure in style of the 80's Schneider CPC464 game: Thor - The trilogy
+	
+	Marc Meidlinger
+	marcm200@freenet.de
+	March-May 2022
+	
+*/
+
 
 #include "stdio.h"
 #include "stdint.h"
@@ -370,9 +381,9 @@ char* upper(char* s) {
 
 	for(int32_t i=0;i<L;i++) {
 		if ((s[i]>='a')&&(s[i]<='z')) s[i]=s[i]-'a'+'A';
-		if (s[i]=='ö') s[i]='Ö';
-		if (s[i]=='ü') s[i]='Ü';
-		if (s[i]=='ä') s[i]='Ä';
+		if (s[i]=='Ã¶') s[i]='Ã–';
+		if (s[i]=='Ã¼') s[i]='Ãœ';
+		if (s[i]=='Ã¤') s[i]='Ã„';
 	}
 
 	return s;
@@ -1769,7 +1780,7 @@ mpComponent* createComponent9(void) {
 
 	R->initObjects(1);
 	oc=0;
-	R->objects[oc]=createFloorNote_IDE(oc,"Die beiden höchstwertigsten Ziffern der Periode sind durch\n   die Buchstaben 'J' auf einfache Art kodiert.",
+	R->objects[oc]=createFloorNote_IDE(oc,"Die beiden hÃ¶chstwertigsten Ziffern der Periode sind durch\n   die Buchstaben 'J' auf einfache Art kodiert.",
         "The two leftmost digits of the current periodicity\n   were encoded in a simple cipher by the letter 'J'-");
 	oc++;
 
@@ -4884,7 +4895,7 @@ int8_t mpObjNoteInCase::getDescr_T(DynSlowString& T) {
            T.add(noteD);
            T.add("\"");
         } else {
-           T.add("an open box with a note reading´\n  \"");
+           T.add("an open box with a note readingÂ´\n  \"");
            T.add(noteE);
            T.add("\"");
         }
@@ -5344,7 +5355,9 @@ int32_t main(int argc,char** argv) {
     mpCommandLoop();
     mpEnd();
 
-	return 0;
+    return 0;
+    
 }
+
 
 
