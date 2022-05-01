@@ -1,6 +1,4 @@
 # Mandelprison - Free Benoit!
-### A text adventure in style of the 80's game Thor - The trilogy for the  Schneider CPC464.
-
 
 ### The Story:
 
