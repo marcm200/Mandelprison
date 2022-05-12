@@ -1,5 +1,7 @@
 # Mandelprison - Free Benoit!
 
+A text adventure in style of the 80's like the Thor trilogy, here in C++. The Locomotive BASIC versions - one per level - are in subfolder BASIC (only in English, but including the magic hex).
+
 ### The Story:
 
 Sadly, Benoit Mandelbrot has been captured by the villain Fraktalo  and is now held prisoner in a cell in the hyperbolic center of the  main cardioid. Your task as the hero Taylor is to free Benoit and prevent fractal mathematics from falling into a dark age - a century without progress. 
