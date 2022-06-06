@@ -1,6 +1,6 @@
 # Mandelprison - Free Benoit!
 
-A text adventure in style of the 80's like the Thor trilogy, here in C++. The Locomotive BASIC versions - one per level - are in subfolder BASIC (only in English, but including the magic hex).
+A text adventure in style of the 80's like the Thorr trilogy, here in C++. The Locomotive BASIC versions - one per level - are in subfolder BASIC (only in English, but including the magic hex).
 
 ### The Story:
 
