@@ -69,7 +69,7 @@ Beispielbefehle
 "schaue hinter spiegel"
 "nimm bauteil"
 "oeffne kiste"
-"benutze trnsmitter"
+"benutze transmitter"
 
 Der Befehlsparser ist sehr primitiv. Er versteht keine Umlaute, 
 betrachtet nur die ersten drei Wörter, und auch dort jeweils nur die 
