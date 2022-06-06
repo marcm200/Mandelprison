@@ -4,7 +4,7 @@ Marc Meidlinger
 April-Mai 2022
 C++-Version: https://github.com/marcm200/Mandelprison 
 
-Ein Textadventure im Stile der Thor-Trilogie aus den 80ern. Drei 
+Ein Textadventure im Stile der Thorr-Trilogie aus den 80ern. Drei 
 Level sind aktuell vorhanden 0,1,2 entsprechend der Dateinamen.
 
 
