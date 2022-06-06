@@ -1,0 +1,91 @@
+"Mandelprison - Free Benoit!"
+
+Marc Meidlinger
+April-Mai 2022
+C++-Version: https://github.com/marcm200/Mandelprison 
+
+Ein Textadventure im Stile der Thor-Trilogie aus den 80ern. Drei 
+Level sind aktuell vorhanden 0,1,2 entsprechend der Dateinamen.
+
+
+Die Geschichte
+--------------
+
+Schrecklicherweise wurde Benoit Mandelbrot entfuehrt und vom Bösewicht
+Fraktalo gefangengehalten in einer Zelle im hyperbolischen Zentrum des 
+Hauptkardioids des Apfelmännchens. Deine Aufgabe als Taylor, der Held 
+des Spiels, ist es nun, Benoit zu finden und zu befreien, um damit zu 
+verhindern, dass die Mathematik in ein dunkles Zeitalter fällt - ein 
+Jahrhundert ohne Fortschritt!
+
+
+Das Spiel
+---------
+
+Du startest in einer hyperbolischen Komponente des Apfelmännchens und 
+musst einen Weg zu Benoits Zelle finden.
+
+Drei Arten der Bewegung sind Dir möglich:
+
+Eine Komponente besteht aus mehreren Räumen, die durch offene Türen 
+miteinander verbunden sind, die Du einfach durschreiten kannst.
+
+Am Rand der Komponente befinden sich eventuell parabolische Türen, die 
+sich nur nach Eingabe der korrekten PIN öffnen. Die PIN ist dabei die 
+Periodizität der aktuellen Komponente, in der Du Dich befindest. 
+Diesen Wert musst Du vorab herausfinden - entweder einfach durch Raten,
+oder nach Suchen bestimmter Hinweise, die in jeder Komponente 
+verteilt sind. Manchmal einfach eine Notiz auf dem Boden, die zu 
+lesen ist, manchmal auch versteckt hinter, unter, in Objekten. 
+Manchmal musst Du Fragen beantworten, die sich mit Fraktalmathematik 
+beschäftigen.
+
+Im hyperbolischen Zentrum einer Komponente gibt es öfters einen 
+Transmitter. Wenn er aktiv ist, transportiert er Dich nach Benutzung 
+in eine andere Komponente derselben Periodizität (unabhängig davon, 
+ob Du die aktuelle bereits herausgefunden hast). Aber Du landest nicht 
+notwendigerweise am Ziel ebenfalls im Zentrum.
+
+In der Startkomponente des Spiels gibt es Teile eines Geräts, des 
+Multiplier-Dtektors. Einmal zusammengebaut (das geschieht automatisch, 
+wenn alle Teile eingesammeltz worden sind), gibt er in jedem Raum eine 
+Approximation des Multipliers an und hilft so, das Zentrum oder den 
+Rand der Komponente schneller zu finden.
+
+
+Das Ziel
+--------
+
+Sobald die Zelle mit Benoit gefunden ist, must Du zum Öffnen eine 
+Frage beantwoerten, hast aber nur eine begrenzte Anzahl von Versuchen 
+bis ein Alarm losgeht. Dann wirst Du zum Spielstart 
+zurücktreleportiert, behältst aber Dein Wissen.
+
+
+Beispielbefehle
+---------------
+
+"gehe nord" (oder kurz "n")
+"schaue hinter spiegel"
+"nimm bauteil"
+"oeffne kiste"
+"benutze trnsmitter"
+
+Der Befehlsparser ist sehr primitiv. Er versteht keine Umlaute, 
+betrachtet nur die ersten drei Wörter, und auch dort jeweils nur die 
+ersten vier Buchstaben. Präpositionen spielen meist keine Rolle 
+("lies notiz", "lies um notiz", "lies notiz rueckwaerts" macht alles 
+dasselbe, es sagt, was auf dem Zettel steht). Aber es gibt 
+Gelegenheiten, in denen die Präpositionen wichtig sind.
+
+Es gibt einen "undokumentierten" Befehl, ein magischer Zauberspruch, 
+der ein Orakel einschaltet, und dies gibt dann fuer alle folgenden 
+Fragen gleich die Antwort an (nicht aber für Rätsel).
+
+Das Spiel ist vollkommen deterministisch und laeuft in jedem Lauf 
+gleich ab.
+
+Die Level unterschieden sich durch die Anzahl der Räume, die 
+Komplexität des Weges zur Zelle sowie die Komplexität der Fragen.
+
+
